@@ -1,0 +1,27 @@
+Tema2-EStore
+Tema mea urmareste constructia unei platforme online al unui magazin cu produse de toate felurile.Avem clasa Produc care este o clasa abstracta deoarecte are functii virtuale fara 
+implementare ,urmand ca acestea sa fie implementate in clasele derivate.Din clasa product vom avea derivate alte doua clase NonFoodProduct si FoodProduct.Din clasa NonFoodPr
+vom avea derivate virtual clasele DiscountP si ReturnedP , daca nu le-am avea derivate virtual , cand facem derivarea multipla din cele doua pentru clasa RetailedP vom avea Death 
+Diamond si nu vrem asta.Din clasa Food P nu se va mai deriva nimic.
+In continuare, platforma nostra va avea nevoie de clienti asa ca vom crea clasa abstracta User din care vom avea BasicU si PremiumU. In clasa User insa avem un atribut de tip adresa
+(o alta clasa pe care se foloseste agregarea ).Fiecare tip de user are anumite avantaje.
+De asemenea, avem o clasa Shopping Card care  este de fapt cosul de cumparaturi. Acesta contine un map cu Id-ul produsului si cantitatea lui.
+Ceea ce uneste aceste clase este clasa server care este un singleton(pattern)=> aici se face legatura dintre user ,produse si consul de cumparaturi. Fiecare user primeste un cos gol in 
+el ulterior isi va adauga sau scote produse in functie de ce exista in stoc.
+O alta clasa este clasa de cerinte unde trebuie sa cautam in liste si sa stocam in alte liste ceea ce ne spune enuntul.Ne vom folosi aici de utility pentru a implement operatori pentru 
+diferite sortari in functie de pret, nume, tara, id si asa mai departe.Aici sunt practic diverse exemple din viata de zi cu zi si ne ajuta sa intelegem mai bine  modul prin care noi 
+implementam daca site ul ar fi real.
+Ultima clasa este clasa  Cache.Aceasta are menirea de a optimiza mai bine platfoma noastra de cumparaturi.Astfel, daca am avea foarte multe accesari si cumparaturi, cu ajutorul
+acestei clase platfoma noastra o sa aiba o performanta mult mai buna.
+In concluzie,tema aceasta ne ajuta sa ne fixam anumite notiuni de baza foarte importante pentru poo cum ar fi: mostenirea, abstractizarea, incapsularea datelor si polimorfismele.Fata 
+de tema trecuta aici folosim toate proprietatile acestui tip de limbaj.
+
+Nu am o bucata anume de cod pe care as putea sa o pun aici, ce era mai complex am comentat in cod.
+De asemenea, tema mi s-a parut foarte interesanta si utila,este ceva practic care ne poate ajuta pe viitor foarte mult mai ales daca alegem sa  combinam un limbaj pentru web design cum ar fi 
+HTMl,JSON, etc..
+
+Probleme am intampinat la cerinta 3f dupa ce s-a schimbat checkerul, si la cerinta 5 (bonusul) mi s-a parut ca testarea in test helper nu a fost foarte bine implmentata, mi-a dat impresia
+ca eu greseam dar de fapt acel lucru nu se testa si mi-a luat ceva sa inteleg ca de fapt nu gresisem.
+
+Am facut o clasa Max pe care ulterior nu o voi folosi, am incercat sa o folosesc la cerinta 3e, dar nu mi-a mers foarte bine si am renuntat, am atasat-o si pe acesta.
+In rest, totul mi s-a parut in regula.
